@@ -7,14 +7,17 @@ Object {
     <div>
       <div
         class="display panel"
+        data-testid="display panel"
       >
         <div
           class="led green-led"
+          data-testid="display-locked"
         >
           Unlocked
         </div>
         <div
           class="led green-led"
+          data-testid="display-closed"
         >
           Open
         </div>
@@ -24,14 +27,17 @@ Object {
   "container": <div>
     <div
       class="display panel"
+      data-testid="display panel"
     >
       <div
         class="led green-led"
+        data-testid="display-locked"
       >
         Unlocked
       </div>
       <div
         class="led green-led"
+        data-testid="display-closed"
       >
         Open
       </div>
