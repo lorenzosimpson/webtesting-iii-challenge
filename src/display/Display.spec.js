@@ -7,7 +7,7 @@ import Display from './Display';
 
 // Snapshot 
 describe('<Display />', () => {
-    it('should match snapshot', () => {
+    test('should match snapshot', () => {
         const tree = render(<Display />);
         expect(tree).toMatchSnapshot();
     })
