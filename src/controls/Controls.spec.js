@@ -20,3 +20,8 @@ test('lock changes to disabled if gate is open', () => {
   const { getByTestId } = render(<Controls closed={false}/>)
   expect(getByTestId('lock-btn').disabled).toBe(true)
 })
+
+test("can't be closed or open if locked", () => {
+  const { getByTestId } = render(<Controls locked={true}/>)
+  expect(getByTestId('lock-btn').disabled).toBe(true)
+})

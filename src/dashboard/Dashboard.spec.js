@@ -1,14 +1,15 @@
 // Test away
 import React from 'react'
-import { render } from '@testing-library/react';
+import { render, getByTestId } from '@testing-library/react';
 import Dashboard from './Dashboard';
-import Controls from '../controls/Controls';
-import Display from '../display/Display';
 
-test('dashboard shows controls', () => {
-    render(<Controls />)
+
+test('dashboard renders', () => {
+    render(<Dashboard />)
 })
 
-test('dashboard shows controls', () => {
-    render(<Display />)
+test('defaults to unlocked and open', () => {
+    const {getByText} = render(<Dashboard />)
+    getByText(/unlocked/i)
+    getByText(/open/i)
 })
