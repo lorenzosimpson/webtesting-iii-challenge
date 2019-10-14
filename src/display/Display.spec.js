@@ -17,3 +17,7 @@ describe('<Display />', () => {
 test('display renders correctly', () => {
     render(<Display />)
 })
+
+// test('should default to unlocked', () => {
+
+// })
